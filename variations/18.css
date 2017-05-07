@@ -1,0 +1,12 @@
+div.gucci {
+	float: left;
+	margin: 0;
+
+	font-family: "comic sans MS";
+	font-weight: bold;
+	font-size: 6in;
+	font-style: oblique;
+	letter-spacing: 5em;
+	line-height: .75em;
+	text-transform: uppercase;
+}

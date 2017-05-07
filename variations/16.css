@@ -1,0 +1,15 @@
+div {
+	position: static;
+}
+
+p {
+	position: absolute;
+
+	font-family: monospace;
+	font-size: 1cm;
+	letter-spacing: 1em;
+}
+
+span {
+	float: right;
+}

@@ -1,0 +1,14 @@
+div.gucci {
+	border: 1px dashed rgba(0,0,0,.2);
+	margin-right: 5px;
+	margin-bottom: 2px;
+	padding: 0px 1px;
+	width: 500px;
+	float: right;
+}
+
+p {
+	margin: auto;
+	display: block;
+	float: left;
+}

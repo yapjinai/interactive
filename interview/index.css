@@ -1,0 +1,16 @@
+body {
+    background: #000000 url("Bobby2.gif") repeat;
+    background-size: 50% 50%;
+    background-attachment: fixed;
+
+    color: #ffffff;
+    font-family: monospace;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: justify;
+}

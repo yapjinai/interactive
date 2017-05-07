@@ -1,0 +1,123 @@
+body {
+    background: #000000 url("simulator-repeat.png") repeat-y 50% 0;
+    background-size: contain;
+
+    color: #ffffff;
+    text-shadow: 0px 0px 5px black;
+    font-family: monospace;
+
+    padding: 0px;
+    padding-top: 175px;
+}
+
+#container {
+	position: relative;
+    margin: 1% 15%;
+	padding: 1% 2%;
+	background-color: rgba(225,225,225,.4);
+}
+
+#container span {
+	display: block;
+	text-align: justify;
+}
+
+#container div {
+	position: relative
+}
+
+#container div.me {
+	margin: 1cm;
+	padding-left: 3in;
+}
+
+#container .label {
+	position: absolute;
+	left: 0;
+	top: 20%;
+
+}
+
+#container div.me span.question {
+	width: 80%;
+	margin: 5px auto;
+	font-size: .8cm;
+	text-align: justify;
+	background-color: rgba(225,0,0,.5);
+}
+
+#container div.me:hover span.question {
+	background: red;
+	color: white;
+}
+
+#container div.me span.highlight {
+	background: red;
+	color: white;
+	width: 85%;
+	margin: 5px;
+	font-size: 1cm;
+	text-align: justify;
+}
+
+#container div.me:hover span.highlight {
+	font-style: italic;
+	text-shadow: 5px 5px 15px white;
+}
+
+#container .quote {
+	display: block;
+	margin: 10px auto;
+	padding: 20px;
+	padding: 175px 20px 100px;
+	background: rgba(225,225,0,.4);
+	width: 70%;
+	min-height: 65vh;
+
+	color: black;
+	font-size: 1cm;
+}
+
+#container .quote:hover {
+	background: rgba(225,225,0,1);
+	text-shadow: 0px 0px 20px red
+}
+
+#container .quote span.answer {
+	margin: auto;
+	text-transform: uppercase;
+	width: 50%;
+
+	font-style: italic;
+	font-size: 2cm;
+}
+
+#container .quote a.next {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+
+	text-decoration: none;
+	font-style: initial;
+	color: initial;
+	background-color: initial;
+	text-shadow: none;
+}
+#container .qmark {
+	position: absolute;
+	font-size: 1in;
+	height: 1in;
+	width: 1in;
+}
+
+#container .qmark.end {
+	bottom: 0;
+	right: -1.5in;
+}
+
+#container .qmark.start {
+	top: -1in;
+	left: -1.5in;
+	padding: 1cm;
+}

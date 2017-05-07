@@ -1,0 +1,406 @@
+body {
+	background: yellow;
+	transform: scale(1);
+	transform-origin: 40% 0;
+	padding: 0;
+}
+
+.stop .eng, .stop .deu {
+	position: absolute;
+	width: 702px;
+	right: -375px;
+	padding: 10px;
+	margin: 0;
+	border-bottom: 4px solid red;
+}
+
+.stop:active .eng, .stop:active .deu {
+	border-bottom: 4px solid blue;
+}
+
+/*********************/
+/**** SCALING */
+/*********************/
+
+}
+@media screen and (max-width: 1023px) {
+  body {
+	transform: scale(0.8);
+	}
+}
+
+@media screen and (max-width: 925px) {
+  body {
+	transform: scale(0.6);
+	}
+}
+
+@media screen and (max-width: 760px) {
+  body {
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	padding-left: 10%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+  body {
+	transform: scale(0.45);
+	}
+}
+
+@media screen and (max-width: 430px) {
+  body {
+	transform: scale(0.4);
+	}
+}
+
+
+
+
+
+
+div {
+	display: inline;
+}
+
+#map {
+	width:1000px;
+	display: block;
+	position: relative;
+	margin: auto;
+
+	font-size: 1cm;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+.line {
+	position: absolute;
+	padding-bottom: 20%;
+}
+
+.stop, .stopname {
+	position: absolute;
+}
+
+#key {
+display:none;
+	position: fixed;
+	right: 0;
+
+	color: black;
+	font-size: x-large;
+	font-family: monospace;
+	font-weight: normal;
+}
+
+#purple {
+	color: purple;
+}
+
+#orange {
+	color: orange;
+}
+
+#red {
+	color: red;
+}
+
+#green {
+	color: green;
+}
+
+
+/*********************/
+/* TEXT */
+/*********************/
+
+.text {
+	position: relative;
+	z-index: 1;
+}
+
+.text:hover {
+	z-index: 2;
+}
+
+.text.down {
+	top: 13px;
+}
+
+.text .station {
+	background: red;
+	padding: 0px 5px;
+	position: relative;
+	left: -5px;
+	z-index: -1;
+}
+
+/* POSITIONING */
+
+.eng, .deu {
+	position: absolute;
+}
+
+/* TEXT OPACITY */
+
+.text .deu {
+	opacity: 1;
+}
+
+.text .eng, {
+	opacity: .0;
+}
+
+.text:hover .eng {
+	display: initial;
+	opacity: .0;
+}
+
+.text:hover .deu {
+	display: initial;
+	opacity: 1;
+}
+
+.text:active .eng {
+	display: initial;
+	opacity: 1;
+}
+
+.text:active .deu {
+	display: initial;
+	opacity: .0;
+}
+
+/* STOPS */
+
+.stop .eng, .stop .deu {
+	display: none;
+	background: yellow;
+}
+
+/* STOP OPACITY */
+
+.stop .deu {
+	opacity: .6;
+}
+
+.stop .text:hover .eng {
+	display: initial;
+	opacity: .0;
+}
+
+.stop .text:hover .deu {
+	display: initial;
+	opacity: 1;
+}
+
+.stop .text:active .eng {
+	display: initial;
+	opacity: .9;
+}
+
+.stop .text:active .deu {
+	display: initial;
+	opacity: .0;
+}
+
+/* STOP NAME OPACITY */
+
+.stop .text:active .deu.name {
+	display: initial;
+	opacity: .9;
+}
+
+.stop .text:active .eng.name {
+	opacity: .5;
+	z-index: 1;
+}
+
+/* TITLE */
+
+#title {
+	position: absolute;
+	width: 50%;
+	height: 75px;
+	text-align: center;
+}
+	
+
+#title .eng, #title .deu {
+	width: 400px;
+	transform: scale(1.5);
+	transform-origin: center top;
+}
+
+
+
+
+
+
+
+
+/*"UPPER" AND "LOWER" PUNCTUATION*/
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+ .eng .space .st1 {
+	border: 5px solid red;
+	border-radius: 50%;
+
+	bottom: 45%;
+	left: 45%;
+}
+/*****************/
+
+.deu .space .st1 {
+	border: 5px solid blue;
+	border-radius: 50%;
+
+	bottom: 45%;
+	left: 45%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.eng .colon .st1 {
+	border: 7px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.eng .colon .st2 {
+	border: 7px solid blue;
+	border-radius: 50%;
+
+	top: 40%;
+	left: 0%;
+}
+
+/*****************/
+
+.deu .colon .st1 {
+	border: 7px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.deu .colon .st2 {
+	border: 7px solid red;
+	border-radius: 50%;
+
+	top: 40%;
+	left: 0%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.eng .period .st1 {
+	height: 30%;
+	width: 30%;
+	background: red;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+
+.deu .period .st1 {
+	height: 30%;
+	width: 30%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+.eng .comma .st1 {
+	height: 30%;
+	width: 30%;
+	background: red;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.eng .comma .st2 {
+	border-left: 15px solid red;
+	border-top: 15px solid none;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+
+	bottom: -30%;
+	left: 0%;
+
+	z-index: 1;
+	opacity: .5;
+}
+/*****************/
+.deu .comma .st1 {
+	height: 30%;
+	width: 30%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.deu .comma .st2 {
+	border-left: 15px solid blue;
+	border-top: 15px solid none;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+
+	bottom: -30%;
+	left: 0%;
+
+	z-index: 1;
+	opacity: .5;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+.eng .bar .st1 {
+	height: 120%;
+	width: 14%;
+	background: red;
+
+	bottom: -10%;
+	left: 43%;
+}
+/*****************/
+.deu .bar .st1 {
+	height: 120%;
+	width: 14%;
+	background: blue;
+
+	bottom: -10%;
+	left: 43%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.asterisk .st1 {
+	border: 20px solid black;
+	border-radius: 50%;
+
+	bottom: -50%;
+	left: 0%;
+}

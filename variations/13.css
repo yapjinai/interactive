@@ -1,0 +1,23 @@
+div.gucci {
+	border: 10px solid rgba(0,0,0,.2);
+	border-radius:100%;
+	padding: 0px 1px;
+	width: 500px;
+	float: left;
+}
+
+p {
+	margin: auto;
+	display: block;
+	float: right;
+}
+
+#container {
+	border: none;
+	border-radius: 0%;
+	position: absolute;
+	margin: auto;
+	width: auto;
+	bottom: 0px;
+	right: 160px;
+}

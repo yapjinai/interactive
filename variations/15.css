@@ -1,0 +1,38 @@
+div.gucci {
+	margin: 10px;
+	border: 100px dashed rgba(0,0,0,.2);
+	padding: 10px;
+	width: auto;
+	position: relative;
+	display: inline;
+	float: right;
+}
+
+li.gucci {
+	margin: 10px;
+	border: 20px dotted rgba(0,0,0,.2);
+	padding: 10px;
+	width: 20%;
+	display: inline;
+	float: left;
+}
+
+div.container, ol {
+	margin: 0px;
+	border: none;
+	padding: 0px;
+}
+div#left, div#right {
+	margin: 0px;
+	border: none;
+	padding: 0px;
+	width: 50%;
+}
+
+#right div {
+	float: left;
+}
+
+#right li {
+	float: right;
+}

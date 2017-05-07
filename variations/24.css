@@ -1,0 +1,33 @@
+body {
+	font-family: monospace;
+	font-size: 10in;
+	color: rgba(0,0,0,.3);
+}
+
+div {
+	margin: auto;
+	width: 1em;
+}
+
+p {
+	position: relative;
+	margin: 0px;
+	height: 1em;
+	width: 1em;
+	float: left;
+	display: inline;
+}
+
+span.gucci, span.first {
+	position: absolute;
+	font-size: 85%;
+	top: 8%;
+	left: 8%;
+}
+
+.first {
+	position: absolute;
+	top: 0%;
+	left: 25%;
+	font-size: 100%;
+}

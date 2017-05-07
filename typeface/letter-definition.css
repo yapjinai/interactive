@@ -1,0 +1,1909 @@
+.letter-definition {
+	display: none;
+}
+
+.letter {
+	display: inline-block;
+	position: relative;
+	margin: 0px 2px;
+
+	width: 50px;
+	height: 50px;
+
+	background: transparent;
+	border: 1px none black;
+}
+
+.letter-definition div {
+	padding:0%;
+	margin:0%;
+}
+/*
+.lower {
+	display: none;
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.upper {
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.letter:hover .upper {
+	display: none;
+
+}
+
+
+.letter:hover .lower {
+	display: initial;
+
+}
+*/
+.stroke {
+
+
+	position: absolute;
+	height: 0;
+	width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+.a .upper .st1 {
+	border-bottom: 50px solid blue;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+
+.a .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 15%;
+}
+
+.a .lower .st2 {
+	height: 60%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 55%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+.b .upper .st1 {
+	border: 15px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 0%;
+}
+
+.b .upper .st2 {
+	border: 12px solid blue;
+	border-radius: 50%;
+
+	top: 0%;
+	right: 20%;
+}
+
+.b .upper .st3 {
+	height: 100%;
+	width: 55%;
+	background: blue;
+
+	top: 0%;
+	left: 0%;
+}
+
+.b .upper .st4 {
+	
+	height: 55%;
+	width: 75%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+
+.b .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 25%;
+}
+
+.b .lower .st2 {
+	height: 100%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 20%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+.c .upper .st1 {
+	border: 25px solid blue;
+	border-right: 25px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+
+	width: 15%;
+}
+
+/*****************/
+.c .lower .st1 {
+	border: 15px solid red;
+	border-right: 15px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+.d .upper .st1 {
+	border: 25px solid blue;
+	border-left: 25px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 0%;
+}
+
+.d .upper .st2 {
+	height: 100%;
+	width: 45%;
+	background: blue;
+
+	top: 0%;
+	left: 0%;
+}
+
+.d .upper .st3 {
+	border: 17px solid blue;
+	border-radius: 50%;
+
+	top: 25%;
+	left: 25%;
+}
+
+/*****************/
+
+.d .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 25%;
+}
+
+.d .lower .st2 {
+	height: 100%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	right: 20%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+.e .upper .st1 {
+	height: 33%;
+	width: 40%;
+	background: blue;
+
+	bottom: 67%;
+	left: 0%;
+}
+
+.e .upper .st2 {
+	height: 33%;
+	width: 70%;
+	background: blue;
+
+	bottom: 34%;
+	left: 0%;
+}
+
+.e .upper .st3 {
+	height: 34%;
+	width: 100%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+.e .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.e .lower .st2 {
+	height: 30%;
+	width: 30%;
+	background: yellow;
+
+	bottom: -3%;
+	left: 50%;
+}
+
+.e .lower .st3 {
+	border: 15px solid red;
+	border-right: 15px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+.f .upper .st1 {
+	height: 33%;
+	width: 100%;
+	background: blue;
+
+	bottom: 67%;
+	left: 0%;
+}
+
+.f .upper .st2 {
+	height: 33%;
+	width: 70%;
+	background: blue;
+
+	bottom: 34%;
+	left: 0%;
+}
+
+.f .upper .st3 {
+	height: 34%;
+	width: 35%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+.f .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 40%;
+	left: 20%;
+}
+
+.f .lower .st2 {
+	height: 30%;
+	width: 30%;
+	background: yellow;
+
+	bottom: 40%;
+	left: 50%;
+}
+
+.f .lower .st3 {
+	height: 70%;
+	width: 30%;
+	background: red;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.f .lower .st4 {
+	height: 20%;
+	width: 20%;
+	background: red;
+
+	bottom: 55%;
+	left: 40%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+.g .upper .st1 {
+	border: 25px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.g .upper .st2 {
+	height: 50%;
+	width: 100%;
+	background: yellow;
+
+	bottom: 50%;
+	left: 0%;
+}
+
+.g .upper .st3 {
+	border: 25px solid blue;
+	border-right: 25px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+.g .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.g .lower .st2 {
+	border: 14px solid red;
+	border-radius: 50%;
+
+	bottom: -50%;
+	left: 23%;
+
+	z-index: 1;
+	opacity: .5;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+.h .upper .st1 {
+	height: 100%;
+	width: 34%;
+	background: blue;
+
+	bottom: 0%;
+	left: 00%;
+}
+
+.h .upper .st2 {
+	height: 100%;
+	width: 34%;
+	background: blue;
+
+	bottom: 0%;
+	right: 0%;
+}
+
+.h .upper .st3 {
+	border: 10px solid blue;
+	border-radius: 50%;
+
+	bottom: 40%;
+	left: 30%;
+}
+/*****************/
+
+.h .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.h .lower .st2 {
+	height: 100%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.h .lower .st3 {
+	height: 30%;
+	width: 59.5%;
+	background: red;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+.i .upper .st1 {
+	height: 100%;
+	width: 30%;
+	background: blue;
+
+	bottom: 0%;
+	left: 35%;
+}
+/*****************/
+.i .lower .st1 {
+	height: 60%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 37%;
+}
+
+.i .lower .st2 {
+	border: 7px solid red;
+	border-radius: 50%;
+
+	bottom: 60%;
+	left: 35%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+.j .upper .st1 {
+	height: 60%;
+	width: 45%;
+	background: blue;
+
+	top: 0%;
+	right: 5%;
+}
+
+.j .upper .st2 {
+	border: 22px solid blue;
+	border-top: 22px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 5%;
+}
+/*****************/
+
+.j .lower .st1 {
+	height: 60%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	right: 37%;
+}
+
+.j .lower .st2 {
+	height: 33%;
+	width: 25%;
+	background: red;
+
+	bottom: -33%;
+	right: 37%;
+
+	z-index: 1;
+	opacity: .5;
+}
+
+.j .lower .st3 {
+	border: 7px solid red;
+	border-radius: 50%;
+
+	bottom: 60%;
+	right: 35%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+.k .upper .st1 {
+	height: 100%;
+	width: 36%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.k .upper .st2 {
+	border-top: 25px solid blue;
+	border-right: 32px solid transparent;
+	border-left: px solid transparent;
+	border-bottom: none;
+
+	top: 0%;
+	right: 0%;
+}
+
+.k .upper .st3 {
+	border-bottom: 35px solid blue;
+	border-right: 32px solid transparent;
+	border-left: px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	right: 0%;
+}
+/*****************/
+
+.k .lower .st1 {
+	height: 100%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.k .lower .st2 {
+	border-top: 15px solid red;
+	border-right: 15px solid transparent;
+	border-left: px solid transparent;
+	border-bottom: none;
+
+	top: 25%;
+	left: 45%;}
+
+.k .lower .st3 {
+	border-bottom: 25px solid red;
+	border-right: 20px solid transparent;
+	border-left: px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 45%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+.l .upper .st1 {
+	height: 100%;
+	width: 35%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.l .upper .st2 {
+	height: 40%;
+	width: 100%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+/*****************/
+.l .lower .st1 {
+	height: 100%;
+	width: 25%;
+	background: red;
+
+	top: 0%;
+	left: 37%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+.m .upper .st1 {
+	border-bottom: 50px solid blue;
+	border-right: 30px solid transparent;
+	border-left: px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.m .upper .st2 {
+	border-bottom: 50px solid blue;
+	border-right: 30px solid transparent;
+	border-left: px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 40%;
+}
+
+/*****************/
+.m .lower .st1 {
+	border: 12px solid red;
+	border-radius: 50%;
+
+	bottom: 10%;
+	left: 5%;
+}
+
+.m .lower .st2 {
+	border: 12px solid red;
+	border-radius: 50%;
+
+	bottom: 10%;
+	right: 5%;
+}
+
+.m .lower .st3 {
+	height: 33%;
+	width: 90%;
+	background: red;
+
+	bottom: 0%;
+	left: 5%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+.n .upper .st1 {
+	border-bottom: 50px solid blue;
+	border-right: 50px solid transparent;
+	border-left: px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.n .upper .st2 {
+	height: 100%;
+	width: 40%;
+	background: blue;
+
+	bottom: 0%;
+	right: 0%;
+}
+
+/*****************/
+.n .lower .st1 {
+	border: 12px solid red;
+	border-radius: 50%;
+
+	bottom: 10%;
+	left: 25%;
+}
+
+.n .lower .st2 {
+	height: 33%;
+	width: 50%;
+	background: red;
+
+	bottom: 0%;
+	left: 25%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+.o .upper .st1 {
+	border: 25px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+.o .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.p .upper .st1 {
+	border: 20px solid blue;
+	border-radius: 50%;
+
+	top: 0%;
+	right: 0%;
+}
+
+.p .upper .st2 {
+	height: 100%;
+	width: 45%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.p .upper .st3 {
+	height: 58%;
+	width: 55%;
+	background: blue;
+
+	top: 0%;
+	left: 0%;
+}
+/*****************/
+.p .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.p .lower .st2 {
+	height: 60%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.p .lower .st3 {
+	height: 33%;
+	width: 25%;
+	background: red;
+
+	bottom: -33%;
+	left: 20%;
+
+	z-index: 1;
+	opacity: .5;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+.q .upper .st1 {
+	border: 25px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.q .upper .st2 {
+	border-bottom: 25px solid blue;
+	border-right: 25px solid transparent;
+	border-left: px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 50%;
+}
+
+/*****************/
+.q .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.q .lower .st2 {
+	height: 60%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	right: 20%;
+}
+
+.q .lower .st3 {
+	height: 33%;
+	width: 25%;
+	background: red;
+
+	bottom: -33%;
+	right: 20%;
+
+	z-index: 1;
+	opacity: .5;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+.r .upper .st1 {
+	border: 20px solid blue;
+	border-radius: 50%;
+
+	top: 0%;
+	right: 0%;
+}
+
+.r .upper .st2 {
+	height: 100%;
+	width: 45%;
+	background: blue;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.r .upper .st3 {
+	height: 58%;
+	width: 55%;
+	background: blue;
+
+	top: 0%;
+	left: 0%;
+}
+
+.r .upper .st4 {
+	border-bottom: 12px solid blue;
+	border-right: 27px solid transparent;
+	border-left: px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 45%;
+}
+
+/*****************/
+.r .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.r .lower .st2 {
+	height: 30%;
+	width: 60%;
+	background: yellow;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.r .lower .st3 {
+	height: 60%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 20%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+.s .upper .st1 {
+	border: 25px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 0%;
+}
+
+.s .upper .st2 {
+	border-bottom: 30px solid yellow;
+	border-right: 15px solid transparent;
+	border-left: none;
+	border-top: none;
+
+	top: 0%;
+	left: 0%;
+}
+
+.s .upper .st3 {
+	border-top: 30px solid yellow;
+	border-left: 15px solid transparent;
+	border-right: none;
+	border-bottom: none;
+
+	bottom: 0%;
+	right: 0%;
+}
+/*****************/
+.s .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.s .lower .st2 {
+	border-bottom: 15px solid yellow;
+	border-right: 10px solid transparent;
+	border-left: none;
+	border-top: none;
+
+	bottom: 25%;
+	left: 15%;
+}
+
+.s .lower .st3 {
+	border-top: 15px solid yellow;
+	border-left: 10px solid transparent;
+	border-right: none;
+	border-bottom: none;
+
+	bottom: 5%;
+	right: 15%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+.t .upper .st1 {
+	height: 100%;
+	width: 35%;
+	background: blue;
+
+	bottom: 0%;
+	left: 33%;
+}
+.t .upper .st2 {
+	height: 30%;
+	width: 100%;
+	background: blue;
+
+	top: 0%;
+	left: 0%;
+}
+/*****************/
+.t .lower .st1 {
+	height: 100%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 37%;
+}
+
+.t .lower .st2 {
+	height: 25%;
+	width: 70%;
+	background: red;
+
+	bottom: 40%;
+	left: 15%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+.u .upper .st1 {
+	height: 60%;
+	width: 90%;
+	background: blue;
+
+	top: 0%;
+	right: 5%;
+}
+
+.u .upper .st2 {
+	border: 22px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 5%;
+}
+
+/*****************/
+.u .lower .st1 {
+	border: 12px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 25%;
+}
+
+.u .lower .st2 {
+	height: 33%;
+	width: 50%;
+	background: red;
+
+	bottom: 27%;
+	left: 25%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.v .upper .st1 {
+	border-top: 50px solid blue;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	border-bottom: none;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+
+.v .lower .st1 {
+	border-top: 30px solid red;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: none;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.w .upper .st1 {
+	border-top: 50px solid blue;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: none;
+
+	bottom: 0%;
+	left: 0%;
+}
+.w .upper .st2 {
+	border-top: 50px solid blue;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: none;
+
+	bottom: 0%;
+	right: 0%;
+}
+/*****************/
+
+.w .lower .st1 {
+	border-top: 30px solid red;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: none;
+
+	bottom: 0%;
+	left: 5%;
+}
+.w .lower .st2 {
+	border-top: 30px solid red;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: none;
+
+	bottom: 0%;
+	right: 5%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.x .upper .st1 {
+	border-top: 25px solid blue;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	border-bottom: none;
+
+	top: 0%;
+	left: 0%;
+}
+.x .upper .st2 {
+	border-bottom: 25px solid blue;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+
+.x .lower .st1 {
+	border-top: 15px solid red;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: none;
+
+	bottom: 30%;
+	left: 20%;
+}
+.x .lower .st2 {
+	border-bottom: 15px solid red;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.y .upper .st1 {
+	border-top: 50px solid blue;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	border-bottom: none;
+
+	top: 0%;
+	left: 0%;
+}
+.y .upper .st2 {
+	height: 100%;
+	width: 30%;
+	background: blue;
+
+	top: 0%;
+	left: 35%;
+}
+/*****************/
+
+.y .lower .st1 {
+	border-top: 20px solid red;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: none;
+
+	bottom: -40%;
+	right: 40%;
+
+	z-index: 1;
+	opacity: .5;
+}
+
+.y .lower .st2 {
+	border-top: 30px solid red;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: none;
+
+	bottom: 0%;
+	right: 10%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.z .upper .st1 {
+	border-top: 30px solid blue;
+	border-right: 20px solid transparent;
+	border-left: 30px solid transparent;
+	border-bottom: none;
+
+	top: 0%;
+	left: 0%;
+}
+.z .upper .st2 {
+	border-bottom: 30px solid blue;
+	border-right: 30px solid transparent;
+	border-left: 20px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 0%;
+}
+/*****************/
+
+.z .lower .st1 {
+	border-top: 18px solid red;
+	border-right: 12px solid transparent;
+	border-left: 18px solid transparent;
+	border-bottom: none;
+
+	bottom: 20%;
+	left: 20%;
+}
+.z .lower .st2 {
+	border-bottom: 18px solid red;
+	border-right: 18px solid transparent;
+	border-left: 12px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.ẞ .upper .st1 {
+	border: 15px solid blue;
+	border-left: 15px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 10%;
+}
+
+.ẞ .upper .st2 {
+	border: 12px solid blue;
+	border-radius: 50%;
+
+	top: 0%;
+	right: 20%;
+}
+
+.ẞ .upper .st3 {
+	height: 73%;
+	width: 30%;
+	background: blue;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.ẞ .upper .st4 {
+	border-bottom: 13px solid blue;
+	border-top: none;
+	border-right: none;
+	border-left: 12px solid transparent;
+
+	bottom: 73%;
+	left: 20%;
+}
+/*****************/
+
+.ß .lower .st1 {
+	border: 15px solid red;
+	border-left: 15px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 15%;
+}
+
+.ß .lower .st2 {
+	border: 12px solid red;
+	border-radius: 50%;
+
+	top: 0%;
+	right: 22%;
+}
+
+.ß .lower .st3 {
+	height: 73%;
+	width: 20%;
+	background: red;
+
+	bottom: 0%;
+	left: 30%;
+}
+
+.ß .lower .st4 {
+	border-bottom: 6px solid red;
+	border-top: none;
+	border-right: none;
+	border-left: 3px solid transparent;
+
+	bottom: 73%;
+	left: 30%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+/*****************/
+
+.ä  .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 15%;
+}
+
+.ä .lower .st2 {
+	height: 60%;
+	width: 25%;
+	background: red;
+
+	bottom: 0%;
+	left: 55%;
+}
+
+.ä .lower .st3 {
+	border: 5px solid red;
+	border-radius: 50%;
+
+	top: 10%;
+	left: 20%;
+}
+
+.ä .lower .st4 {
+	border: 5px solid red;
+	border-radius: 50%;
+
+	top: 10%;
+	right: 20%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+/*****************/
+.ö .lower .st1 {
+	border: 15px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.ö .lower .st2 {
+	border: 5px solid red;
+	border-radius: 50%;
+
+	top: 10%;
+	left: 20%;
+}
+
+.ö .lower .st3 {
+	border: 5px solid red;
+	border-radius: 50%;
+
+	top: 10%;
+	right: 20%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+/*****************/
+.ü .lower .st1 {
+	border: 13px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 25%;
+}
+
+.ü .lower .st2 {
+	height: 33%;
+	width: 50%;
+	background: red;
+
+	bottom: 27%;
+	left: 25%;
+}
+
+.ü .lower .st3 {
+	border: 5px solid red;
+	border-radius: 50%;
+
+	top: 10%;
+	left: 20%;
+}
+
+.ü .lower .st4 {
+	border: 5px solid red;
+	border-radius: 50%;
+
+	top: 10%;
+	right: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n0 .upper .st1 {
+	border: 24px solid red;
+	border-top: 24px solid transparent;
+	border-left: 24px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 0%;
+}
+.n0 .upper .st2 {
+	border: 24px solid red;
+	border-bottom: 24px solid transparent;
+	border-right: 24px solid transparent;
+	border-radius: 50%;
+
+	top: 0%;
+	left: 0%;
+}
+/*****************/
+
+.n0 .lower .st1 {
+	border: 25px solid blue;
+	border-left: 15px solid blue;
+	border-right: 15px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n1 .upper .st1 {
+	height: 100%;
+	width: 30%;
+	background: red;
+
+	top: 0%;
+	left: 55%;
+}
+.n1 .upper .st2 {
+	border-bottom: 20px solid red;
+	border-right: none;
+	border-left: 20px solid transparent;
+	border-top: none;
+
+	top: 0%;
+	left: 15%;
+}
+/*****************/
+
+.n1 .lower .st1 {
+
+	height: 100%;
+	width: 15%;
+	background: blue;
+
+	bottom: 0%;
+	left: 43%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n2 .upper .st1 {
+	border: 20px solid red;
+	border-bottom: 20px solid transparent;
+	border-radius: 50%;
+
+	top: 0%;
+	left: 0%;
+}
+
+.n2 .upper .st2 {
+	border-bottom: 30px solid red;
+	border-right: 30px solid transparent;
+	border-left: 12px solid transparent;
+	border-top: none;
+
+	bottom: 0%;
+	left: 17%;
+}
+/*****************/
+
+.n2 .lower .st1 {
+	border: 15px solid blue;
+	border-radius: 50%;
+
+	top: 0%;
+	left: 20%;
+}
+
+.n2 .lower .st23 {
+	width: 60%;
+	height: 30%;
+	background: blue;
+
+	top: 30%;
+	left: 20%;
+}
+
+.n2 .lower .st3 {
+	width: 60%;
+	height: 15%;
+	background: blue;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.n2 .lower .st4 {
+	border: none;
+	border-left: 26px solid blue;
+	border-bottom: 26px solid transparent;
+
+	bottom: 0%;
+	left: 20%;
+}
+
+.n2 .lower .st5 {
+	border: none;
+	border-left: 20px solid blue;
+	border-bottom: 20px solid transparent;
+
+	bottom: 15%;
+	left: 15%;
+}
+
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n3 .upper .st1 {
+	border: 15px solid red;
+	border-left: 15px solid transparent;
+	border-radius: 50%;
+
+	width: 20%;
+	top: 0%;
+	left: 10%;
+}
+
+.n3 .upper .st2 {
+	border: 15px solid red;
+	border-left: 15px solid transparent;
+	border-radius: 50%;
+
+	width: 20%;
+	bottom: 0%;
+	left: 10%;
+}
+/*****************/
+
+.n3 .lower .st1 {
+	border: 15px solid blue;
+	border-left: 15px solid transparent;
+	border-radius: 50%;
+
+	top: 0%;
+	left: 20%;
+}
+
+.n3 .lower .st2 {
+	border: 15px solid blue;
+	border-left: 15px solid transparent;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 20%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n4 .upper .st1 {
+	height: 100%;
+	width: 30%;
+	background: red;
+
+	top: 0%;
+	left: 55%;
+}
+.n4 .upper .st2 {
+	height: 75%;
+	width: 60%;
+	background: red;
+
+	top: 0%;
+	left: 15%;
+}
+/*****************/
+
+.n4 .lower .st1 {
+
+	height: 100%;
+	width: 15%;
+	background: blue;
+
+	bottom: 0%;
+	right: 25%;
+}
+
+.n4 .lower .st2 {
+	border: none;
+	border-bottom: 40px solid blue;
+	border-left: 20px solid transparent;
+
+	top: 0%;
+	right: 40%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n5 .upper .st1 {
+	border: 17px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 15%;
+}
+.n5 .upper .st2 {
+	height: 30%;
+	width: 60%;
+	background: red;
+
+	top: 0%;
+	left: 20%;
+}
+.n5 .upper .st3 {
+	height: 20%;
+	width: 30%;
+	background: red;
+
+	top: 20%;
+	left: 20%;
+}
+.n5 .upper .st4 {
+	border: none;
+	border-top: 12px solid red;
+	border-left: 10px solid transparent;
+
+	top: 40%;
+	left: 20%;	
+}
+/*****************/
+
+
+.n5 .lower .st1 {
+	border: 15px solid blue;
+	border-radius: 50%;
+
+	bottom: 0%;
+	right: 20%;
+}
+
+.n5 .lower .st23 {
+	width: 60%;
+	height: 30%;
+	background: blue;
+
+	bottom: 30%;
+	right: 20%;
+}
+
+.n5 .lower .st3 {
+	width: 60%;
+	height: 15%;
+	background: blue;
+
+	top: 0%;
+	right: 20%;
+}
+
+.n5 .lower .st4 {
+	border: none;
+	border-left: 26px solid blue;
+	border-top: 20px solid transparent;
+
+	top: 11%;
+	left: 20%;
+}
+
+.n5 .lower .st5 {
+	border: none;
+	border-left: 20px solid blue;
+	border-top: 15px solid transparent;
+
+	top: 25%;
+	left: 15%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n6 .upper .st1 {
+	border: 17px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 15%;
+}
+.n6 .upper .st2 {
+	border: none;
+	border-bottom: 25px solid red;
+	border-left: 15px solid transparent;
+
+	top: 0%;
+	left: 19%;	
+}
+/*****************/
+
+.n1 .lower .st1 {
+
+	height: 100%;
+	width: 15%;
+	background: blue;
+
+	bottom: 0%;
+	left: 43%;
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n7 .upper .st1 {
+	border: none;
+	border-top: 20px solid red;
+	border-right: 30px solid transparent;
+
+	top: 0%;
+	left: 20%;	
+}
+.n7 .upper .st2 {
+	border: none;
+	border-bottom: 40px solid red;
+	border-left: 20px solid transparent;
+
+	bottom: 0%;
+	left: 11%;	
+}
+.n7 .upper .st3 {
+	border: none;
+	border-top: 50px solid red;
+	border-right: 20px solid transparent;
+
+	top: 0%;
+	left: 50%;	
+}
+/*****************/
+
+.n1 .lower .st1 {
+
+	height: 100%;
+	width: 15%;
+	background: blue;
+
+	bottom: 0%;
+	left: 43%;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n8 .upper .st1 {
+	border: 12px solid red;
+	border-radius: 50%;
+
+	top: 0%;
+	left: 25%;
+}
+.n8 .upper .st2 {
+	border: 17px solid red;
+	border-radius: 50%;
+
+	bottom: 0%;
+	left: 15%;
+}
+/*****************/
+
+.n1 .lower .st1 {
+
+	height: 100%;
+	width: 15%;
+	background: blue;
+
+	bottom: 0%;
+	left: 43%;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+.n9 .upper .st1 {
+	border: 17px solid red;
+	border-radius: 50%;
+
+	top: 0%;
+	left: 15%;
+}
+.n9 .upper .st2 {
+	border: none;
+	border-top: 25px solid red;
+	border-right: 15px solid transparent;
+
+	bottom: 0%;
+	right: 20%;	
+}
+/*****************/
+
+.n1 .lower .st1 {
+
+	height: 100%;
+	width: 15%;
+	background: blue;
+
+	bottom: 0%;
+	left: 43%;
+}

@@ -1,0 +1,35 @@
+div.gucci {
+	margin-left: 50px;
+	float: left;
+
+	font-family: impact;
+	font-weight: bold;
+	font-size: 2cm;
+	font-style: oblique;
+	line-height: .5em;
+	text-align: justify;
+	text-transform: lowercase;
+
+	width: 3em;
+	height: 5em;
+}
+
+ol {
+	margin: auto;
+	height: 2em;
+}
+
+li li li li li.gucci,
+li li li li.gucci,
+li li li.gucci,
+li li.gucci {
+	font-size: 60%;
+}
+
+li.gucci {
+	margin-bottom: -6.5em;
+
+	border-top: 100px dashed rgba(130,70,230,.2);
+	border-bottom: 200px dotted rgba(230,70,130,.2);
+	border-radius: 50%;
+}

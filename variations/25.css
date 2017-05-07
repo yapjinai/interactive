@@ -1,0 +1,10 @@
+span.gucci {
+	background: rgba(230,70,130,.01);
+	border: 1px solid rgba(130,70,230,.5);
+	border-radius: 50%;
+	color: rgba(255,255,255,.5);
+	text-align: justify;
+
+	font-family: monospace;
+	font-size: 1cm;
+}

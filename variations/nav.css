@@ -1,0 +1,93 @@
+nav * {
+	position: initial;
+	border: initial;
+	border-radius: initial;
+	padding: initial;
+	float: initial;
+	display: initial;
+	top: initial;
+	right: initial;
+	bottom: initial;
+	left: initial;
+	width: initial;
+	height: initial;
+	font-style: initial;
+	letter-spacing: initial;
+	line-height: initial;
+	text-transform: initial;
+	background: initial;
+}
+
+section {
+	margin: 8% 0% 5%;
+}
+
+nav div, nav ul {
+	position: fixed;
+	margin: 0;
+	width: auto;
+	
+	font-size: 12pt;
+	font-family: monospace;
+	text-align: right;
+	font-weight: initial;
+	z-index: 1;
+	padding: 5px 10px;	
+	color: white;
+	background: rgba(230,70,130,.15);
+}
+
+nav div:hover, nav ul:hover, nav div:active, nav ul:active {
+	color: black;
+	font-weight: bold;
+	background: #dafbfd;
+}
+
+nav #forward {
+	right: 0%;
+	bottom: 0%;
+}
+
+nav #backward {
+	left: 0%;
+	bottom: 0%;
+}
+
+nav #home {
+	left: 0%;
+	top: 0%;
+}
+
+nav #title {
+	right: 0%;
+	top: 0%;
+}
+
+nav #menu {
+	right: 0%;
+	top: 2em;
+}
+
+nav #menu li{
+	display: none;
+	font-size: 125%;
+}
+
+nav #menu:hover li, #menu:hover li a {
+	display: block;
+}
+
+nav a:link, nav a:visited {
+	color: white;
+	background: rgba(230,70,130,.1);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: black;
+}
+
+nav a:active {
+	color: white;
+	background: rgba(230,70,130,.2);
+}

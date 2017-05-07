@@ -1,0 +1,5 @@
+load javascript right before </body>
+order matters, like in css
+console.log() - sandbox
+
+ctrl + / to comment!!

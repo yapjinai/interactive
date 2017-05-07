@@ -1,0 +1,88 @@
+body {
+	background-color: transparent;
+}
+
+#inner,
+#outer {
+	position: relative;
+	margin: auto;
+
+	display: flex;
+    display: -webkit-flex;
+    
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 10vw;
+
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+
+    background: transparent;
+}
+
+#outer {
+	right: 15vw;
+}
+
+/*************/
+
+img {
+	position: relative;
+    width: auto;
+    height: auto;
+	top: -50%;
+}
+
+/*************/
+
+/*INNER*/
+.inner {
+	max-width: 20%;
+	display: initial;
+}
+
+.inner.center {
+	max-width: 42%;
+}
+
+/*OUTER*/
+.outer {
+	max-width: 24%
+	/*flex-basis: auto;*/
+}
+
+.inner.left {
+	transform: scale(1.1) perspective(100px) rotateY(10deg);
+}
+
+.inner.right {
+	transform: scale(1.1) perspective(100px) rotateY(-10deg);
+}
+
+/**************/
+
+img.hide {
+	display: none;
+}
+
+img.show {
+	display: initial;
+}
+
+/**************/
+/**************/
+
+/*FOR MOBILE*/
+
+
+
+@media screen and (max-width: 768px) {
+	#inner,
+	#outer,
+	img {
+		right: 0;
+		top: 0;
+	}
+}

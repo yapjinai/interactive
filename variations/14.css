@@ -1,0 +1,17 @@
+div.gucci {
+	margin: 10px;
+	border: 10px solid rgba(0,0,0,.2);
+	padding: 10px;
+	width: auto;
+	position: relative;
+	display: inline;
+	float: right;
+}
+
+#right div {
+	float: left;
+}
+
+#right li {
+	float: right;
+}

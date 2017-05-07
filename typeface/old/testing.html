@@ -1,0 +1,402 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="testing.css">
+<script type="text/javascript" src="testing.js"></script>
+
+</head>
+
+
+
+<body>
+
+<!-- Use the letters (visible) -->
+
+<div class="letters">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+
+<!-- Define the letters (invisible) -->
+
+<div class="letter-definition" data-character=" ">
+    <div class="space"></div>
+</div>
+
+<div class="letter-definition" data-character="A">
+    <div class="A">
+        <div class="lines-A">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="B">
+    <div class="B">
+        <div class="lines-B">
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="C">
+    <div class="C">
+        <div class="lines-C">
+            <div class="middle"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="letter-definition" data-character="D">
+    <div class="D">
+        <div class="lines-D">
+            <div class="left"></div>
+            <div class="middle"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="E">
+    <div class="E">
+        <div class="lines-E">
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="F">
+    <div class="F">
+        <div class="lines-F">
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="middle"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="G">
+    <div class="G">
+        <div class="lines-G">
+            <div class="middle"></div>
+            <div class="right"></div>
+            <div class="top"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="H">
+    <div class="H">
+        <div class="lines-H">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="I">
+    <div class="I">
+        <div class="lines-I">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="J">
+    <div class="J">
+        <div class="lines-J">
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="K">
+    <div class="K">
+        <div class="lines-K">
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="L">
+    <div class="L">
+        <div class="lines-L">
+            <div class="left"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="M">
+    <div class="M">
+        <div class="lines-M">
+            <div class="sides"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="N">
+    <div class="N">
+        <div class="lines-N">
+            <div class="sides"></div>
+            <div class="middle"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="O">
+    <div class="O">
+        <div class="lines-O">
+            <div class="middle"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="P">
+    <div class="P">
+        <div class="lines-P">
+            <div class="left"></div>
+            <div class="top"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="Q">
+    <div class="Q">
+        <div class="lines-Q">
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="R">
+    <div class="R">
+        <div class="lines-R">
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="top"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="S">
+    <div class="S">
+        <div class="lines-S">
+            <div class="top-bar"></div>
+            <div class="top"></div>
+            <div class="bottom-bar"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="T">
+    <div class="T">
+        <div class="lines-T">
+            <div class="top"></div>
+            <div class="middle"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="U">
+    <div class="U">
+        <div class="lines-U">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="V">
+    <div class="V">
+        <div class="lines-V">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="W">
+    <div class="W">
+        <div class="lines-W">
+            <div class="sides"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="X">
+    <div class="X">
+        <div class="lines-X">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="Y">
+    <div class="Y">
+        <div class="lines-Y">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="Z">
+    <div class="Z">
+        <div class="lines-Z">
+            <div class="top"></div>
+            <div class="middle"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="1">
+    <div class="one">
+        <div class="lines-one">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="2">
+    <div class="two">
+        <div class="lines-two">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="3">
+    <div class="three">
+        <div class="lines-three">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="4">
+    <div class="four">
+        <div class="lines-four">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="5">
+    <div class="five">
+        <div class="lines-five">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="6">
+    <div class="six">
+        <div class="lines-six">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="7">
+    <div class="seven">
+        <div class="lines-seven">
+            <div class="top"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="8">
+    <div class="eight">
+        <div class="lines-eight">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="9">
+    <div class="nine">
+        <div class="lines-nine">
+            <div class="top"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="0">
+    <div class="zero">
+        <div class="lines-zero">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="!">
+    <div class="exclamation">
+        <div class="middle"></div>
+        <div class="point"></div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="?">
+    <div class="question">
+        <div class="lines-question">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="point"></div>
+        </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character=".">
+    <div class="period">
+        <div class="point"></div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="&quot;">
+    <div class="quotes">
+        <div class="both"></div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character=",">
+    <div class="comma">
+        <div class="one"></div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WIEN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+    
+    <link rel="stylesheet" href="map.css" type="text/css" />
+    <link rel="stylesheet" href="letter-definition.css" type="text/css" />
+
+
+</head>
+
+<body>
+	<div id="key">
+		x = terminal <br>
+		o = point of interest
+	</div>
+
+<!--MAP PART-->
+
+<!-- SUBWAY MAP: https://alfredovela.files.wordpress.com/2011/06/metroviena.png -->
+
+	<div id="map">
+
+		<div id="title">
+			<div class="text">
+				<div class="eng">
+					<div class="letters">VIENNA</div>
+				</div>
+				<div class="deu">
+					<div class="letters">wien</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<span class="line" id="red">
+			<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;<br>
+		</span>
+
+		<span class="line" id="orange">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			&nbsp;x<br>
+			&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;\<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<span style="text-decoration: underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;<br>
+		</span>
+
+		<span class="line" id="green">
+			<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.&nbsp;<span style="text-decoration: underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;/&nbsp;<br>
+
+		</span>
+
+		<span class="line" id="purple">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<span style="text-decoration: overline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<span style="text-decoration: underline;">&nbsp;&nbsp;</span>&nbsp;/&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<span style="text-decoration: underline;">&nbsp;&nbsp;</span>x&nbsp;<br>
+		</span>
+
+
+<!--STOPS-->
+<!--STOPS-->
+<!--STOPS-->
+
+
+		<div id="stops">
+
+			<div class="stop" id="Stephansplatz">
+				<br><br><br><br><br><br><br><br><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="text down">
+					<span class="station">o</span>
+
+<!-- name -->
+					<br>
+						<div class="eng name">
+							<div class="letters">stephansplatz</div>
+						</div>
+						<div class="deu name">
+							<div class="letters">STEPHANSPLATZ</div>
+						</div>
+
+<!-- description -->
+					<br>
+					<br>
+
+					<div class="eng">
+						<div class="letters">see:IMPERIAL TREASURY eat:TRZESNIEWSKI|KLEINES CAFE</div>
+					</div>
+					<div class="deu">
+						<div class="letters">SEHEN:kaiserliche schatzkammer ESSEN:trzesniewski| kleines cafe</div>
+					</div>
+<!-- description -->
+
+				</div>
+				<br>
+			</div>
+
+			<div class="stop" id="Schwedenplatz">
+				<br><br><br><br><br><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="text">
+					<span class="station">o</span>
+
+					<br>
+						<div class="eng name">
+							<div class="letters">schwedenplatz</div>
+						</div>
+						<div class="deu name">
+							<div class="letters">SCHWEDENPLATZ</div>
+						</div>
+
+<!-- description -->
+					<br>
+					<br>
+
+					<div class="eng">
+						<div class="letters">caffeine:KAFFEE ALT WIEN alcohol:ROBERTO AMERICAN BAR</div>
+					</div>
+					<div class="deu">
+						<div class="letters">KOFFEIN:kaffee alt wien ALKOHOL:roberto american bar</div>
+					</div>
+<!-- description -->
+
+				</div>
+				<br>
+			</div>
+			<div class="stop" id="Landstraße">
+				<br><br><br><br><br><br><br><br><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="text down">
+					<span class="station">o</span>
+					
+					<br>
+						<div class="eng name">
+							<div class="letters">landstraße</div>
+						</div>
+						<div class="deu name">
+							<div class="letters">LANDSTRAẞE</div>
+						</div>
+
+<!-- description -->
+					<br>
+					<br>
+					<div class="eng">
+						<div class="letters">see:AUSTRIAN MUSEUM OF APPLIED ART</div>
+					</div>
+					<div class="deu">
+						<div class="letters">SEHEN:österreichisches museum für angewandte kunst</div>
+					</div>
+<!-- description -->
+
+				</div>
+				<br>
+			</div>
+
+			<div class="stop" id="Karlsplatz">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="text down">
+					<span class="station">o</span>
+					
+					<br>
+						<div class="eng name">
+							<div class="letters">karlsplatz</div>
+						</div>
+						<div class="deu name">
+							<div class="letters">KARLSPLATZ</div>
+						</div>
+
+
+<!-- description -->
+					<br>
+					<br>
+					<div class="eng">
+						<div class="letters">see:ALBERTINA|SECESSION BUILDING</div>
+					</div>
+					<div class="deu">
+						<div class="letters">SEHEN:albertina|wiener secessionsgebäude</div>
+					</div>
+<!-- description -->
+
+				</div>
+				<br>
+			</div>
+
+			<div class="stop" id="Volkstheater">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="text down">
+					<span class="station">o</span>
+					
+					<br>
+						<div class="eng name">
+							<div class="letters">volkstheater</div>
+						</div>
+						<div class="deu name">
+							<div class="letters">VOLKSTHEATER</div>
+						</div>
+
+
+<!-- description -->
+					<br>
+					<br>
+
+					<div class="eng">
+						<div class="letters">drink:DONAUTECHNO</div>
+					</div>
+					<div class="deu">
+						<div class="letters">TRINKEN:donautechno</div>
+					</div>
+<!-- description -->
+				</div>
+				<br>
+
+				</div>
+				<br>
+			</div>
+
+			<div class="stop" id="Hauptbahnhof">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="text">
+					<span class="station">o</span>
+					
+					<br>
+						<div class="eng name">
+							<div class="letters">hauptbahnhof</div>
+						</div>
+						<div class="deu name">
+							<div class="letters">HAUPTBAHNHOF</div>
+						</div>
+
+
+<!-- description -->
+					<br>
+					<br>
+
+					<div class="eng">
+						<div class="letters">travel:TO SLOVAKIA</div>
+					</div>
+					<div class="deu">
+						<div class="letters">REISEN:nach slowakei</div>
+					</div>
+<!-- description -->
+				</div>
+				<br>
+			</div>
+
+		</div>	<!-- end of stops -->
+	</div>	<!-- end of maps -->
+
+
+<!-- Use the letters (visible) -->
+<!-- Use the letters (visible) -->
+<!-- Use the letters (visible) -->
+<!-- Use the letters (visible) -->
+<!-- Use the letters (visible) -->
+<!-- Use the letters (visible) -->
+
+<!--UPPERCASE-->
+<!--UPPERCASE-->
+<!--UPPERCASE-->
+<!--UPPERCASE-->
+<!--UPPERCASE-->
+<!--UPPERCASE-->
+
+	<div class="letter-definition" data-character=" ">
+		<div class="letter punct space">
+			<div class="lower">
+				<div class="stroke st1"></div>
+			</div>
+			<div class="upper">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="A">
+		<div class="letter a">
+			<div class="upper">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="B">
+	    <div class="letter b">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="C">
+	<div class="letter c">
+		<div class="upper">
+			<div class="stroke st1"></div>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="letter-definition" data-character="D">
+		<div class="letter d">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="E">
+		<div class="letter e">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="F">
+		<div class="letter f">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="G">
+		
+		<div class="letter g">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="letter-definition" data-character="H">
+		<div class="letter h">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="I">
+		<div class="letter i">
+			<div class="upper">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="J">
+		<div class="letter j">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="K">
+		<div class="letter k">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="letter-definition" data-character="L">
+		<div class="letter l">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="M">
+		<div class="letter m">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="letter-definition" data-character="N">
+		<div class="letter n">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="O">
+	
+		<div class="letter o">
+			<div class="upper">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="P">
+
+		<div class="letter p">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="Q">
+		<div class="letter q">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="R">
+
+		<div class="letter r">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="S">
+		<div class="letter s">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="T">
+		<div class="letter t">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="U">
+
+		<div class="letter u">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="V">
+		<div class="letter v">
+			<div class="upper">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="W">
+		<div class="letter w">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="X">
+		<div class="letter x">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="Y">
+		<div class="letter y">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="Z">
+
+		<div class="letter z">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="ẞ">
+	    <div class="letter ẞ">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+<!--LOWERCASE-->
+<!--LOWERCASE-->
+<!--LOWERCASE-->
+<!--LOWERCASE-->
+<!--LOWERCASE-->
+<!--LOWERCASE-->
+
+	<div class="letter-definition" data-character="a">
+		<div class="letter a">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="b">
+	    <div class="letter b">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="c">
+		<div class="letter c">
+			<div class="lower">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="letter-definition" data-character="d">
+		<div class="letter d">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="e">
+		<div class="letter e">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="f">
+		<div class="letter f">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="g">
+		
+		<div class="letter g">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="letter-definition" data-character="h">
+		<div class="letter h">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="i">
+		<div class="letter i">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="j">
+		<div class="letter j">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="k">
+		<div class="letter k">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="letter-definition" data-character="l">
+		<div class="letter l">
+			<div class="lower">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="m">
+		<div class="letter m">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="letter-definition" data-character="n">
+		<div class="letter n">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="o">
+		<div class="letter o">
+			<div class="lower">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="p">
+
+		<div class="letter p">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="q">
+		<div class="letter q">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="r">
+
+		<div class="letter r">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="s">
+
+		<div class="letter s">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="t">
+		<div class="letter t">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="u">
+		<div class="letter u">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="v">
+
+		<div class="letter v">
+			<div class="lower">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="w">
+
+		<div class="letter w">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="x">
+		<div class="letter x">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="y">
+		<div class="letter y">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="z">
+
+		<div class="letter z">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="ß">
+	    <div class="letter ß">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="ä">
+		<div class="letter ä">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="letter-definition" data-character="ö">
+		<div class="letter ö">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="ü">
+		<div class="letter ü">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+<!--NUMBERS-->
+<!--NUMBERS-->
+<!--NUMBERS-->
+<!--NUMBERS-->
+<!--NUMBERS-->
+<!--NUMBERS-->
+<!--NUMBERS-->
+<!--NUMBERS-->
+
+	<div class="letter-definition" data-character="0">
+		<div class="letter num n0">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="1">
+
+		<div class="letter num n1">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="2">
+		<div class="letter num n2">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="3">
+
+		<div class="letter num n3">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="4">
+		<div class="letter num n4">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="5">
+		<div class="letter num n5">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+				<div class="stroke st4"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="6">
+
+		<div class="letter num n6">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="7">
+
+		<div class="letter num n7">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+				<div class="stroke st3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="8">
+
+		<div class="letter num n8">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="9">
+
+		<div class="letter num n9">
+			<div class="upper">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+<!--PUNCTUATION-->
+<!--PUNCTUATION-->
+<!--PUNCTUATION-->
+<!--PUNCTUATION-->
+<!--PUNCTUATION-->
+<!--PUNCTUATION-->
+
+	<div class="letter-definition" data-character="!">
+	    <div class="exclamation">
+	        EXCLAMATION
+	    </div>
+	</div>
+
+	<div class="letter-definition" data-character="?">
+	    <div class="question">
+	        QUESTION
+	    </div>
+	</div>
+
+	<div class="letter-definition" data-character=".">
+		<div class="letter punct period">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character=",">
+		<div class="letter punct comma">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character=":">
+		<div class="letter punct colon">
+			<div class="lower">
+				<div class="stroke st1"></div>
+				<div class="stroke st2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="|">
+		<div class="letter punct bar">
+			<div class="lower">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="letter-definition" data-character="*">
+		<div class="letter punct asterisk">
+			<div class="lower">
+				<div class="stroke st1"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

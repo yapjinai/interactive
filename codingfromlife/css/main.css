@@ -1,0 +1,193 @@
+html, body {
+	background: black;
+	height: 100%;
+}
+
+div {
+	position: absolute;
+}
+
+.canvas {
+	position: relative;
+	background: gray;
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+
+	z-index: 0;
+}
+
+#orb {
+	background: white;
+	border-radius: 50%;
+	width: 290px;
+	height: 275px;
+
+	right: 107px;
+	bottom: 60px;
+	z-index: 2;
+}
+
+#vase {
+	background: rgba(0,0,0,.1);
+	width: 120px;
+	height: 275px;
+
+	left: 220px;
+	bottom: 50px;
+	z-index: 3;
+}
+
+#water {
+	background: rgba(0,0,0,.1);
+	width: 94%;
+	height: 60%;
+
+	left: 3%;
+	bottom: 7%;
+}
+
+.flower {
+	width: 18px;
+	height: 320px;
+
+}
+
+.flower.one {
+	left: 20px;
+	bottom: 0px;
+    	-ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    		transform: rotate(-7deg);
+}
+
+.flower.two {
+	left: 30px;
+	bottom: 0px;
+    	-ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    		transform: rotate(2deg);
+}
+
+.flower.three {
+	left: 40px;
+	bottom: 0px;
+    	-ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    		transform: rotate(-20deg);
+}
+
+.stem {
+	background: green;
+	width: 60%;
+	height: 100%;
+
+	left: 20%;
+	top: 0%;
+}
+
+.head {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+
+	left: -17px;
+	top: -50px;
+}
+
+.petal {
+	background: rgba(255,255,0,.3);
+	width: 30px;
+	height: 50px;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+
+	left: 10px;
+	bottom: 0px;
+}
+
+.petal.one {
+}
+
+.petal.two {
+    	-ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    		transform: rotate(-20deg);
+}
+
+.petal.three {
+    	-ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    		transform: rotate(20deg);
+}
+
+#gourd {
+	background: rgba(255,200,150,1);
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+
+	left: 370px;
+	bottom: 55px;
+	z-index: 3;
+}
+
+#gourdstem{
+	background: rgba(186,156,88,1);
+	border-radius: 50%;
+	width: 33%;
+	height: 33%;
+
+	left: 34%;
+	top: 34%;
+	z-index: 4;
+}
+
+.clem {
+	background-color: rgba(256,127,39,1);
+	border-radius: 40%;
+	border-top-right-radius: 50%;
+	width: 70px;
+	height: 55px;
+}
+
+.clem.one {
+	left: 290px;
+	bottom: 40px;
+	z-index: 4;
+}
+
+.clem.two {
+	left: 460px;
+	bottom: 100px;
+	z-index: 1;
+}
+
+/*
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid yellow;
+	top: 160px;
+	left: 100px;
+}
+
+#square {
+	width: 200px;
+	height: 200px;
+	background: red;
+	top: 160px;
+	left: 350px;
+}
+
+#circle {
+	width: 200px;
+	height: 200px;
+	background: blue;
+	border-radius: 200px;
+	top: 160px;
+	left: 600px;
+}
+*/

@@ -1,0 +1,92 @@
+body {
+	font-size: xx-large;
+	font-family: Helvetica;
+	padding: 10%;
+	padding-top: 175px;
+}
+
+h1 {
+	width: 50%;
+	margin: auto;
+}
+h2 {
+	width: 25%;
+	margin: auto;
+}
+
+.quote {
+}
+
+.me {
+}
+
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	font-style: italic;
+	color: black;
+	background-color: yellow;
+;}
+
+a:hover {
+	background-color: red;
+	text-shadow: 2px 2px 15px #000000;
+
+}
+a:active {
+	text-shadow: 2px 2px 0px #000000;
+}
+
+nav {
+	margin: auto;
+	display: block;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	text-align: center;
+	font-family: monospace;
+	font-size: xx-large;
+}
+
+nav .link, nav a {
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background: #fff url(Bobby.gif) no-repeat right top;
+	background-size: 150px 150px;
+	opacity: .5;
+}
+
+nav .link:hover, nav a:hover {
+	opacity: 1;
+}
+
+nav a .linktext {
+	display: none;
+}
+
+nav:hover a .linktext {
+	display: inline-block;
+	color: white;
+}
+
+header {
+	display: block;
+	position: fixed;
+	width: 100px;
+	margin: auto;
+	bottom: -25px;
+	left: -25px;
+	padding: 50px;
+	z-index: 2;
+
+	background-color: rgba(225,225,0,.5);
+	border-radius: 50%;
+
+	font-size: xx-large;
+	font-family: monospace;
+}
+
+header:hover {
+	background-color: yellow;
+}

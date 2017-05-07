@@ -1,0 +1,52 @@
+section {
+	font-family: monospace;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1em;
+	line-height: 1.5em;
+}
+
+div {
+	margin: auto;
+	padding: 5px;
+	position: relative;
+	width: 40%;
+
+	margin-top: .5em;
+}
+
+p {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.second {
+	position: absolute;
+	top: .25em;
+	left: 1em;
+}
+
+.first a:hover, .second a:visited {
+	color: red;
+}
+
+.second a:hover, .first a:visited {
+	color: blue;
+}
+
+.first a:active {
+	color: blue;
+	background: red;
+}
+
+.second a:active {
+	color: red;
+	background: blue;
+}

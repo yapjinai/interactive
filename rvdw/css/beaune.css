@@ -1,0 +1,73 @@
+body {
+	background-color: transparent;
+/*	background: url("wood.jpg");
+	background-size: cover;*/
+}
+
+#inner,
+#outer {
+	position: relative;
+	margin: auto;
+
+	display: flex;
+    display: -webkit-flex;
+    
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+
+    background: transparent;
+}
+
+/*************/
+
+img {
+	position: relative;
+    width: auto;
+    height: auto;
+	top: -50%;
+}
+
+/*************/
+
+/*INNER*/
+.inner {
+	max-width: 20%;
+	display: initial;
+}
+
+/*OUTER*/
+.outer {
+	max-width: 28%
+	/*flex-basis: auto;*/
+}
+
+.outer.left {
+	transform: perspective(500px) rotateY(10deg);
+}
+
+.outer.center {
+	max-width: 37%;
+}
+
+.outer.right {
+	transform: perspective(500px) rotateY(-10deg);
+}
+
+/**************/
+
+img.hide {
+	display: none;
+}
+
+img.show {
+	display: initial;
+}
+
+/**************/

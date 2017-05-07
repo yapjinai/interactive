@@ -1,0 +1,310 @@
+body {
+	background: url("../images/seven-sacraments-center-middle.jpg");
+    background-size: contain;
+	background-repeat: repeat-y;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+div {
+	position: relative;
+
+	/*border: 10px dotted black;	*/
+}
+
+img {
+	position: relative;
+	max-width: 100%;
+	/*max-height: 100%;*/
+
+}
+
+/*sections of church*/
+.apse,
+.altar,
+.nave,
+.pew,
+.enter {
+	position: relative;
+	display: block;
+	/*margin: 5% auto;*/
+	margin: auto;
+
+	width: 100%;
+}
+
+.apse {
+	/*margin-top: auto;*/
+
+	border-color: red;
+}
+
+.altar {
+	height: 50vw;
+	z-index: 5;
+	
+	border-color: yellow;
+}
+
+/*NAVE*/
+
+.altar. {
+	height: auto;
+}
+
+.altar .candle {
+	position: absolute;
+	display: block;
+	z-index: 8;
+
+	bottom: -30vw;
+	width: 30vw;
+}
+
+.altar .candle.left {
+	left: 8vw;
+}
+
+.altar .candle.right {
+	right: 8vw;
+}
+
+.altar .candle.light {
+	display: none;
+}
+
+.altar .candle.light.lit {
+	display: inherit;
+}
+
+.candle.sunday {
+	display: block;
+	transform: translateY(-10vw);
+
+}
+
+/*NAVE*/
+
+.nave {
+	height: 80vw;
+	z-index: 10;
+
+	border-color: green;
+}
+
+.nave.blad {
+	height: 60vw;
+}
+
+.pew {
+	height: 60vw;
+	z-index: 15;
+
+	border-color: teal;
+}
+
+.pew.sunday {
+	height: 90vw;
+}
+
+.enter {
+	/*margin-bottom: auto;*/
+
+	border-color: blue;
+}
+
+/*background*/
+img.church {
+	width: 100%;
+}
+
+img.church.top {
+	z-index: -1;
+	top: 0
+}
+
+img.church.bottom {
+	z-index: -2;
+	position: absolute;
+	/*bottom: 0*/
+}
+
+/*Beaune altarpiece iframe*/
+.beaune {
+	position: relative;
+	display: block;
+	margin: auto;
+
+	width: 90%;
+	height: 80vw;
+
+	bottom: 20vw;
+
+	border: none;
+}
+
+.beaune.open {
+	height: 55vw;
+}
+
+/*NAVE*/
+
+.deposition {
+	transform: scale(.85) perspective(300px) rotateY(-5deg);
+	right: 10vw;
+}
+
+.cruc {
+	position: relative;
+	display: block;
+	margin: auto;
+
+	max-width: 80%;
+}
+
+.cruc img {
+	/*position: relative;
+	display: block;
+	margin: auto;
+*/
+	max-width: 50%;
+}
+
+.cruc-left {
+	transform: perspective(400px) rotateY(20deg);
+}
+
+.cruc-right {
+	transform: perspective(400px) rotateY(-20deg);
+}
+
+/*Bladelin altarpiece*/
+.bladelin {
+	position: relative;	
+	display: block;
+	margin: auto;
+
+	width: 90%;
+	height: 60vw;
+
+	bottom: 10vw;
+	left: 20vw;
+
+	border: none;
+
+	transform: perspective(400px) rotateY(15deg);
+}
+
+/*PEW*/
+
+/*Prayer iframe*/
+.prayer {
+	position: relative;
+	display: block;
+	margin: auto;
+	transform: scale(.80) perspective(300px) rotateY(-10deg);
+    
+	opacity: .9;
+
+	width: 50vw;
+	height: 90vw;
+
+	bottom: 15vw;
+	/*left: 40%;*/
+
+	border: none;
+	z-index: 20;
+}
+
+.prayer.sunday {
+	transform: none;
+	display: block;
+	margin: auto;
+	width: 75vw;
+	bottom: 0;
+	left: 0;
+}
+
+/**************/
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/**************/
+
+/*FOR MOBILE*/
+
+
+
+@media screen and (max-width: 768px) {
+	div.nave.blad,
+	div.pew,
+	div.enter {
+		margin-top: 5vw;
+	}
+
+	div.nave.dep,
+	div.nave.cruc {
+		margin-top: 10vw;
+	}
+
+	div.apse,
+	div.altar,
+	div.nave,
+	/*div.nave.blad,*/
+	div.pew,
+	div.enter {
+		height: auto;
+		width: 100%;
+	}
+
+	img.deposition,
+	iframe.beaune,
+	iframe.bladelin,
+	iframe.prayer {
+		transform: none;
+		display: block;
+		margin: auto;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+
+	iframe.prayer {
+		width: 75%;
+		/*transform: scale(.30) */
+	}
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+	.pew {
+		width: 100%;
+	}
+	iframe.prayer {
+		width: 100%;
+		transform: scale(.70) 
+	}
+
+
+	div.apse,
+	div.enter img,
+	.altar.candle {
+		display: none;
+	}
+	body {
+		background: url("../images/seven-sacraments-center.jpg");
+	    background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed;
+		padding: 20% 0;
+	}
+}

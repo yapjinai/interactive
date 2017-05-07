@@ -1,0 +1,27 @@
+#container {
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+
+p {
+	position: relative;
+	display: inline;
+	float: right;
+
+	width: 5cm;
+	height: 5cm;
+}
+
+span.gucci {
+	width: 98%;
+	position: absolute;
+
+	text-align: center;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 5cm;
+
+
+	color: rgba(0,0,0,.01);
+}

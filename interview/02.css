@@ -1,0 +1,76 @@
+body {
+    background: #ffffff url("dontwanna.png") repeat 50% 0;
+    background-size: cover;
+
+    color: #ffffff;
+    text-shadow: 0px 0px 5px black;
+    font-family: monospace;
+    padding: 0px;
+    padding-top: 175px;
+}
+
+#container {
+	position: relative;
+    margin: 1% 10% 10%;
+	padding: 1% 2%;
+	background-color: rgba(225,225,225,.4);
+}
+
+span.answer {
+	margin: auto;
+	display: block;
+	text-align: justify;
+	width: 25%;
+
+	font-size: 1in;
+	line-height: .5in;
+}
+
+div.layout {
+	position: relative
+}
+
+div.q {
+	margin: auto;
+	width: 500px;
+	height: 500px;
+
+	border-radius: 50%;
+	border: 300px solid rgba(225,0,0,.01);
+	background: rgba(225,0,0,.3);
+}
+
+span.q {
+	position: absolute;
+	display: inline-block;
+	border-radius: 50%;
+	border: 50px solid rgba(225,0,0,.01);
+	background: rgba(225,0,0,.3);
+
+}
+
+.q1 {
+	height: 30%;
+	width: 30%;
+	left: 200px;
+	top: -25px;
+}
+
+.q2 {
+	height: 25%;
+	width: 25%;
+	left: -100px;
+	top: 50px;
+}
+
+.q3 {
+	height: 30%;
+	width: 30%;
+	left: -15px;
+	top: 170px;
+	padding: 40px;
+}
+
+div.a {
+	top: 500px;
+}

@@ -1,0 +1,9 @@
+div.gucci {
+	border: 45px dotted rgba(0,0,0,.2);
+	border-radius:0%;
+	padding: 0px 1px;
+}
+
+p {
+	margin: auto;
+}
