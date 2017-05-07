@@ -24,7 +24,7 @@ $(document).ready(function() {
   var day = today.getDate();
   console.log("Today is " + today.getDay() + " " + month + " " + day);
 
-  if(today.getDay() == 1){
+  if(true){
     $('.nave').addClass("show");
     $('.altar').addClass("show");
     console.log("Sunday");

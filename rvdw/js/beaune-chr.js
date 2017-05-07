@@ -33,7 +33,7 @@ $(document).ready(function() {
     holidayMsgNl = "Allerheiligen";
   }
   //
-  if(month == 04 && day == 01) {
+  if(true) {
     holidayMsg = "Christmas";
     holidayMsgNl = "Kerstmis";
   }

@@ -8,14 +8,7 @@ $(document).ready(function() {
   console.log("Today is " + month + " " + day);
   var holiday = false;
 
-  if((month == 00 && day == 01)
-  || (month == 03 && day == 14)
-  || (month == 03 && day == 16)
-  || (month == 04 && day == 25)
-  || (month == 07 && day == 15)
-  || (month == 10 && day == 01)
-  //
-  || (month == 04 && day == 01)) {
+  if(true) {
     var holiday = true;
     $('.beaune').addClass("open");
 }
@@ -31,7 +24,7 @@ $(document).ready(function() {
     console.log("Sunday");
     pageScroll();
   }
-  if(holiday == true){
+  if(true){
     $('.nave').addClass("show");
     $('.altar').addClass("show");
     console.log("holiday");

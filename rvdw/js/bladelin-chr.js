@@ -7,7 +7,7 @@ $(document).ready(function() {
   var holiday = false;
   var holidayMsg = "not a holy day";
 
-  if(month == 04 && day == 01) {
+  if(true) {
     holidayMsg = "Christmas"
   }
 
