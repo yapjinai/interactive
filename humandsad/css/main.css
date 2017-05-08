@@ -1,0 +1,228 @@
+body {
+	font-family: calibri, futura, consolas, monaco;
+	font-size: large;
+	background: rgba(250,250,250,1);
+	color: rgba(100,100,100,1);
+}
+
+a {
+	color: rgba(150,150,150,1);
+	text-decoration: none;
+	border-bottom: 1px dotted rgba(200,200,200,1);
+	font-weight: normal;
+}
+
+a:visited {
+	color: rgba(200,200,200,1);
+}
+
+a:hover {
+	color: rgba(150,150,150,1);
+}
+
+a:active {
+	color: rgba(100,100,100,1);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+h1, h1 a {
+	color: rgba(100,100,100,1);
+	text-decoration: initial;
+	border: initial;
+	font-weight: bold;
+}
+
+/*NAV SETTINGS*/
+ul {
+	list-style: none;
+}
+
+/*********************************/
+/*********************************/
+/*********************************/
+.container,
+nav,
+.flex, {
+	box-sizing: border-box;
+	margin: 2%;
+	
+
+	color: rgba(235,235,235,1);
+
+	/*border: 2px solid black;*/
+}
+/*********************************/
+/*********************************/
+/*********************************/
+.container {
+	position: relative;
+	overflow: auto;
+
+	margin: 2% auto;
+	height: 100%;
+	width: 90%;
+
+	border-color: red;
+}
+/*********************************/
+/*********************************/
+/*********************************/
+nav {
+	position: fixed;
+	float: left;
+	width: 15%;
+	min-width: 150px;
+	height: auto;
+	
+	padding: 2%;
+	background: white;
+	z-index: 10;
+
+	border-color: green;
+}
+/*********************************/
+/*********************************/
+/*********************************/
+section {
+	margin-left: 25%;
+	height: 100%;
+	max-width: 75%;
+
+	border-color: blue;
+}
+/*********************************/
+/*********************************/
+/*********************************/
+.flex {
+/************IMAGES CONTAINER FLEX***********/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 2%;
+
+	/*padding: 2%;*/
+	background: white;
+}
+/*********************************/
+/*********************************/
+/*********************************/
+.image {
+	width: 75%;
+	min-width: 300px;
+	height: auto;
+	margin: 50px;
+/************IMAGES CONTAINER FLEX***********/
+	flex: none;
+}
+/*********************************/
+/*********************************/
+/*********************************/
+img {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+/*********************************/
+/*********************************/
+/*********************************/
+/*extras*/
+/*********************************/
+/*********************************/
+/*********************************/
+
+.contact {
+	text-align: right;
+}
+h3 {
+	text-align: center;
+}
+.show {
+	font-style: italic;
+}
+.desc {
+	position: relative;
+	left: 50px;
+	font-size: 95%;
+}
+
+.caption {
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************/
+/*********************************/
+/*********************************/
+/*mobile*/
+/*********************************/
+/*********************************/
+/*********************************/
+
+@media screen and (max-width: 820px) {
+.container,
+nav,
+.flex, {
+	margin: 0;
+	width: init;
+}
+/*********************************/
+/*********************************/
+/*********************************/
+.container {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+
+}
+/*********************************/
+/*********************************/
+/*********************************/
+nav {
+	/*position: relative;*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	
+	/*background: pink;*/
+}
+/*********************************/
+/*********************************/
+/*********************************/
+section {
+	margin: auto;
+	margin-top: 200px;
+	margin-bottom: 20px;
+
+	width: 100%;
+}
+/*********************************/
+/*********************************/
+/*********************************/	
+nav li {
+	display: inline;
+	margin: 5px;
+}
+
+nav ul {
+	padding: 0;
+}
