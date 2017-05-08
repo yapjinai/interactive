@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-  //for beaune iframe height
-
   var currentTime = new Date();
   var month = currentTime.getMonth();
   var day = currentTime.getDate();
@@ -17,6 +15,7 @@ $(document).ready(function() {
   || (month == 11 && day == 25)) {
     var holiday = true;
     $('.beaune').addClass("open");
+    console.log("It's a holiday.");
 }
 
   var today = new Date();
@@ -27,13 +26,13 @@ $(document).ready(function() {
   if(today.getDay() == 0){
     $('.nave').addClass("show");
     $('.altar').addClass("show");
-    console.log("Sunday");
+    console.log("It's Sunday");
     pageScroll();
   }
-  if(holiday == true){
+  else if(holiday == true){
     $('.nave').addClass("show");
     $('.altar').addClass("show");
-    console.log("holiday");
+    console.log("It's a holiday");
     pageScroll();
   }
   else {

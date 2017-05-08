@@ -116,6 +116,15 @@ section {
 /************IMAGES CONTAINER FLEX***********/
 	flex: none;
 }
+.img-menu, .img-menu a {
+	width: 40%;
+	height: auto;
+	margin: 1%;
+	border: none;
+	z-index: 9;
+/************IMAGES CONTAINER FLEX***********/
+	flex: none;
+}
 /*********************************/
 /*********************************/
 /*********************************/
@@ -140,7 +149,7 @@ img {
 .contact {
 	text-align: right;
 }
-h3 {
+h2 {
 	text-align: center;
 }
 .show {
