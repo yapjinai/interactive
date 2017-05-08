@@ -1,0 +1,55 @@
+body {
+	background: url("../images/seven-sacraments-center.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;
+	color: rgba(0,0,0,.8);
+
+	font-size: large;
+	font-family: calibri, futura, consolas, monaco;
+}
+
+div {
+	background: rgba(255,255,255,.7);
+	padding: 2% 5%;
+	margin: 5%;
+}
+
+section {
+	position: relative;
+	margin: 5px auto;
+	width: 50%;
+	min-width: 400px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 2% 0 0 5%;
+}
+
+a {
+	color: red;
+	text-shadow: 5%;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	color: black;
+}
+
+#enter {
+	text-align: center;
+}
+
+#alt {
+	opacity: .75;
+	/*color: rgba(0,0,0,.5);*/
+}
